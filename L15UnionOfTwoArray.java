@@ -41,3 +41,55 @@ public class L15UnionOfTwoArray {
         
     }
 }
+
+/* 
+
+class Solution{
+    public static int doUnion(int a[], int n, int b[], int m) 
+    {
+        //Your code here
+      //  Arrays.sort(a);
+    //    Arrays.sort(b);
+        int i=0;
+        int j=0;
+        int c1=0;
+        int c2=0;
+        int c3=0;
+        int count=0;
+        while(i<n && j< m){
+            if(i>0 && a[i]==a[i-1]){i++; continue;}
+            if(j>0 && b[j]==b[j-1]){j++; continue;}
+            
+            if(a[i] < b[j]){
+                i++;
+            }
+            else if(a[i] >b[j]){
+                j++;
+            }
+            else{
+               // count++;
+               c1++;
+                i++;
+                j++;
+            }
+            
+        }
+        while(i<n){
+            if(i>0 && a[i]!=a[i-1]){
+                c2++;
+                i++;
+            }
+        }
+        while(j<m){
+            if(j>0 && b[j]!=b[j-1]){
+                c3++;
+               // count++;
+                j++;
+            }
+        }
+        count = c1+c2+c3;
+        return count;
+    }
+}
+
+*/
