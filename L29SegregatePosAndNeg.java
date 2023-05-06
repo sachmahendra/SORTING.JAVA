@@ -1,6 +1,7 @@
 // this solution is based on quick sort HOARS algo 
 
 // THIS CAN ALSO SOLVED BY ARRAY LECTURE 12 CONCEPT
+// WE CAN ALSO SOLVE SOME OTHER PROBLEM LIKE ---- SEGREGATE EVEN AND ODD --- SEGREGAT 0 AND 1 IN BINARY ARRAY
 
 public class L29SegregatePosAndNeg {
     static void segPosNeg(int arr[], int n){
