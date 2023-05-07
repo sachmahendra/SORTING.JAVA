@@ -31,11 +31,11 @@ public class L30partitionOfArrayInRange {
     }
 
     public static void main(String[] args) {
-        int arr[] = new int[]{10,5,6,3,20,9,40};
+        int arr[] = new int[]{10,5,6,3,20,9,40,8};
         
         int n = arr.length;
         int a=5;
-        int b=9;
+        int b=10;
         
         threeWayPartition(arr,a,b);
 	
