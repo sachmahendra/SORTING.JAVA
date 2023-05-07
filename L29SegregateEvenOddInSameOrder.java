@@ -8,22 +8,22 @@ public class L29SegregateEvenOddInSameOrder {
         if(n==0 || n==1){
             return;
         }
-        int a[]= new int[n];  // MAKE ANOTHER ARRAY OF SAME SIZE
+        int temp[]= new int[n];  // MAKE ANOTHER ARRAY OF SAME SIZE
         int i=0;
         for(int j=0;j<n;j++){
             if(arr[j]%2==0){    // FIRST STORE ALL +VE VALUES
-                a[i]=arr[j];
+                temp[i]=arr[j];
                 i++;
             }
         }
         for(int j=0;j<n;j++){
             if(arr[j]%2 != 0){ // NOW STORE ALL NEGATIVE VALUES IN ARRAY
-                a[i]=arr[j];
+                temp[i]=arr[j];
                 i++;
             }
         }
         for(int j=0;j<n;j++){  // NOW MOVE ALL ELEMENT IN ORIGINAL ARRAY 
-            arr[j]=a[j];
+            arr[j]=temp[j];
         }
     }
     public static void main(String[] args) {
