@@ -30,6 +30,7 @@ public class L30partitionOfArrayInRange {
         return 1;
     }
 
+
     public static void main(String[] args) {
         int arr[] = new int[]{10,5,6,3,20,9,40,8};
         
